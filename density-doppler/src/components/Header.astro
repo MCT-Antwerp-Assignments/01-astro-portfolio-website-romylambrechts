@@ -1,0 +1,10 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<nav>
+  <a href="/" class={currentPath === "/" ? "active" : ""}>Home</a>
+  <a href="/blog" class={currentPath === "/blog" ? "active" : ""}>Blog</a>
+  <a href="/works" class={currentPath === "/works" ? "active" : ""}>Works</a>
+  <a href="/contact" class={currentPath === "/contact" ? "active" : ""}>Contact</a>
+</nav>

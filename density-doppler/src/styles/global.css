@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.active {
+  font-weight: bold;
+}
