@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 const pageTitle = "Home";
 ---
 
@@ -12,13 +12,80 @@ const pageTitle = "Home";
         <title>{pageTitle}</title>
     </head>
     <body>
-        <a href="/">Home</a>
-        <a href="/works/">Works</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact/">Contact</a>
+        <header class="navbar">
+            <nav>
+                <a href="/">Home</a>
+                <a href="/works/">Works</a>
+                <a href="/blog/">Blog</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+        </header>
 
-        <h1>{pageTitle}</h1>
-        <h2>Romy Lambrechts</h2>
-    </body>
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>
+                        Hi, I am John,<br />
+                        Creative Technologist
+                    </h1>
+
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                    </p>
+
+                    <button>Download Resume</button>
+                </div>
+
+                <div class="hero-image">
+                    <img src="/profile.png" alt="Profile" />
+                </div>
+            </section>
+
+            <section class="posts-section">
+                <div class="posts-header">
+                    <h2>Recent posts</h2>
+                    <a href="#">View all</a>
+                </div>
+
+                <div class="posts-grid">
+                    <article class="post-card">
+                        <h3>Making a design system from scratch</h3>
+
+                        <div class="post-info">
+                            <span>12 Feb 2020</span>
+                            <span>|</span>
+                            <span>Design, Pattern</span>
+                        </div>
+
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat
+                            duis enim velit mollit. Exercitation veniam
+                            consequat sunt nostrud amet.
+                        </p>
+                    </article>
+
+                    <article class="post-card">
+                        <h3>Creating pixel perfect icons in Figma</h3>
+
+                        <div class="post-info">
+                            <span>12 Feb 2020</span>
+                            <span>|</span>
+                            <span>Figma, Icon Design</span>
+                        </div>
+
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat
+                            duis enim velit mollit. Exercitation veniam
+                            consequat sunt nostrud amet.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main></body
+    >
 </html>
-
