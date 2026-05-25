@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+const { pathname } = Astro.url;
 ---
 
 <!doctype html>
@@ -16,10 +17,10 @@ import "../styles/global.css";
 	<body>
 		<header class="navbar">
 			<nav>
-				<a href="/">Home</a>
-				<a href="/works/">Works</a>
-				<a href="/blog/">Blog</a>
-				<a href="/contact/">Contact</a>
+				<a href="/" class={pathname === "/" ? "active" : ""}>Home</a>
+				<a href="/works/" class={pathname === "/works/" ? "active" : ""}>Works</a>
+				<a href="/blog/" class={pathname === "/blog/" ? "active" : ""}>Blog</a>
+				<a href="/contact/" class={pathname === "/contact/" ? "active" : ""}>Contact</a>
 			</nav>
 		</header>
 
